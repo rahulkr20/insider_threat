@@ -2,7 +2,7 @@
 # Code to make a simple calculator(GUI) using python3.
 
 from tkinter import *
-import tkinter as Tk
+import tkinter as tk
 from tkinter import font as tkFont
 
 # Screen width and height.
@@ -34,7 +34,7 @@ def get_ans():
         display.set(word)
 
 
-root = Tk()
+root = tk.Tk()
 
 # Setting the geometry.
 root.geometry("{}x{}".format(screen_width, screen_height))
