@@ -1,6 +1,13 @@
 # Use an official Python runtime as a parent image
 FROM python:3
+FROM python:3.12
 
+# Install necessary libraries
+RUN apt-get update \
+    && apt-get install -y \
+       python3-tk \
+       xvfb \
+    && rm -rf /var/lib/apt/lists/*
 # Set the working directory to /app
 WORKDIR /app
 
