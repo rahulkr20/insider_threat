@@ -2,6 +2,7 @@
 # Code to make a simple calculator(GUI) using python3.
 
 from tkinter import *
+import tkinter as Tk
 from tkinter import font as tkFont
 
 # Screen width and height.
